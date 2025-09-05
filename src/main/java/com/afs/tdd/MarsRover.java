@@ -9,10 +9,17 @@ public class MarsRover {
     }
 
     public void executeCommand(Command command) {
-
+        if (command == Command.M){
+            moveForward();
+        }
     }
 
     private void moveForward() {
+        Direction direction = location.getDirection();
+        switch (direction) {
+            case N:
+                location.setY(location.getLocationY() + 1);
+        }
     }
 
     private void turnRight() {

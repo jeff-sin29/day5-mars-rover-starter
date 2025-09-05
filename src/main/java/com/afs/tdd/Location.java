@@ -15,6 +15,18 @@ public class Location {
         return x;
     }
 
+    public void setDirection(Direction direction) {
+        this.direction = direction;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
     public int getLocationY() {
         return y;
     }
