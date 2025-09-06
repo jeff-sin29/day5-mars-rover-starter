@@ -23,6 +23,9 @@ public class MarsRover {
             case E:
                 location.setX(location.getLocationX() + 1);
                 break;
+            case S:
+                location.setY(location.getLocationY() - 1);
+                break;
 
         }
     }
