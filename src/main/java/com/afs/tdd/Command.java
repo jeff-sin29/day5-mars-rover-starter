@@ -1,5 +1,5 @@
 package com.afs.tdd;
 
 public enum Command {
-    L, R, M
+    L, R, M, B
 }
