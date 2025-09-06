@@ -174,7 +174,7 @@ class MarsRoverTest {
     }
 
     @Test
-    void should_mov_backward_when_executeCommand_given_R_and_Direction_is_N(){
+    void should_mov_backward_when_executeCommand_given_B_and_Direction_is_N(){
         // Given
         Location location = new Location(0,0, Direction.N);
         MarsRover marsRover = new MarsRover(location);

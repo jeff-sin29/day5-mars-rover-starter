@@ -18,6 +18,9 @@ public class MarsRover {
         else if (command == Command.R){
             turnRight();
         }
+        else if (command == Command.B){
+            moveBackward();
+        }
     }
 
     private void moveForward() {
@@ -36,6 +39,15 @@ public class MarsRover {
                 location.setX(location.getLocationX() - 1);
                 break;
 
+        }
+    }
+
+    private void moveBackward() {
+        Direction direction = location.getDirection();
+        switch (direction) {
+            case N:
+                location.setY(location.getLocationY() - 1);
+                break;
         }
     }
 
