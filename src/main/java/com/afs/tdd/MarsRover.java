@@ -12,6 +12,9 @@ public class MarsRover {
         if (command == Command.M){
             moveForward();
         }
+        else if (command == Command.L){
+            turnLeft();
+        }
     }
 
     private void moveForward() {
@@ -34,9 +37,16 @@ public class MarsRover {
     }
 
     private void turnRight() {
+
     }
 
     private void turnLeft() {
+        Direction direction = location.getDirection();
+        switch (direction) {
+            case N:
+                location.setDirection(Direction.W);
+                break;
+        }
     }
 
     public Location getLocation() {
