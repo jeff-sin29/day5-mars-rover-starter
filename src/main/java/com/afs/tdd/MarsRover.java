@@ -48,6 +48,9 @@ public class MarsRover {
             case E:
                 location.setDirection(Direction.S);
                 break;
+            case S:
+                location.setDirection(Direction.W);
+                break;
         }
 
     }
