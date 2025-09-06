@@ -32,4 +32,18 @@ class MarsRoverTest {
         assertEquals(currentLocation.getLocationX(), marsRover.getLocation().getLocationX());
         assertEquals(currentLocation.getDirection(), marsRover.getLocation().getDirection());
     }
+
+    @Test
+    void should_move_when_executeCommand_given_M_and_Direction_is_S(){
+        // Given
+        Location location = new Location(0,0, Direction.S);
+        MarsRover marsRover = new MarsRover(location);
+        // When
+        marsRover.executeCommand(Command.M);
+        //Then
+        Location currentLocation = new Location(0, -1, Direction.S);
+        assertEquals(currentLocation.getLocationY(), marsRover.getLocation().getLocationY());
+        assertEquals(currentLocation.getLocationX(), marsRover.getLocation().getLocationX());
+        assertEquals(currentLocation.getDirection(), marsRover.getLocation().getDirection());
+    }
 }
